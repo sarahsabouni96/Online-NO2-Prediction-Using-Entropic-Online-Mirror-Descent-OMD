@@ -1,17 +1,17 @@
 #  Online-NO2-Prediction-Using-Entropic-Online-Mirror-Descent-OMD
 
-This project implements a **real-time $NO_2$ (Nitrogen Dioxide) concentration prediction system** using a continuous **Online Learning** algorithm: the **Entropic Online Mirror Descent (OMD)**.
+This project implements a real-time $NO_2$ (Nitrogen Dioxide) concentration prediction system using a continuous Online Learning algorithm: the Entropic Online Mirror Descent (OMD).
 
-The model operates by continuously receiving live $NO_2$ measurements, predicting the next reading, and iteratively updating its internal prediction parameter every hour, allowing it to adapt to local air quality dynamics and **concept drift**.
+The system continuously receives live $NO_2$ measurements, predicts the next reading, and updates its internal prediction parameter every hour. This enables it to adapt to local air quality dynamics and concept drift in real time.
+For demonstration purposes, the model currently uses data from the Chemnitz – Leipziger Straße air-quality monitoring sensor.
 
-The primary API endpoint used to fetch live $NO_2$ values is:
-`https://api.waqi.info/feed/here/?token=YOUR_TOKEN`
+
 
 ---
 
 ## 🔬 Project Overview
 
-This system is a demonstration of using online convex optimization for environmental time-series data. It is structured to run continuously, bridging the gap between historical batch processing and real-time operational learning.
+This system is a demonstration of applying online convex optimization to environmental time-series data. It runs continuously, bridging the gap between traditional offline analysis and real-time adaptive learning.
 
 ### Execution Flow
 
